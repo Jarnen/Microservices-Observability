@@ -11,6 +11,7 @@ COPY . ./
 RUN apt-get update && \
     pip install --upgrade pip && \
     pip install -r requirements.txt && \
-    pip3 install flask Flask-Opentracing jaeger-client
+    pip3 install flask Flask-Opentracing jaeger-client && \
+    pip3 install prometheus-flask-exporter
 
 CMD ["gunicorn", "--access-logfile", "-", "--error-logfile", "-", "-w", "4", "-b", "0.0.0.0:8080", "app:app"]
