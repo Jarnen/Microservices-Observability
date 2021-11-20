@@ -6,25 +6,25 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: trial
+      app: gunicorn-app
   template:
     metadata:
       labels:
-        app: trial
+        app: gunicorn-app
     spec:
       containers:
-      - name: trial
-        image: ghcr.io/thejaysmith/trial:v1
+      - name: gunicorn-app
+        image: jarich/gunicorn:v1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 8082
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: trial-service
+  name: gunicorn-service
 spec:
   selector:
-    app: trial
+    app: gunicorn-app
   ports:
     - port: 8082
       targetPort: 8080

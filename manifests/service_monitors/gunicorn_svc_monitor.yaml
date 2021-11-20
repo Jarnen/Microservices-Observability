@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: gunicorn
+  namespace: monitoring #namespace the Prometheus instance is running in
+  labels:
+    app: gunicorn
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: gunicorn-service
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 15s
+  namespaceSelector:
+    matchNames:
+    - default
