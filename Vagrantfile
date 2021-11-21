@@ -39,6 +39,7 @@ Vagrant.configure("2") do |config|
   #config.vm.network "forwarded_port", guest: 8000, host: 8888
   config.vm.network "forwarded_port", guest: 8888, host: 8888
   config.vm.network "forwarded_port", guest: 8000, host: 8000
+  config.vm.network "forwarded_port", guest: 5000, host: 5000
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
@@ -71,9 +72,9 @@ Vagrant.configure("2") do |config|
   #
   #   # Customize the amount of memory on the VM:clear
 
-    vb.memory = "4096"
+    vb.memory = "5096"
     #vb.memory = "2048"
-    vb.name = "k3s4"
+    vb.name = "k3s5"
   end
 
   if Vagrant.has_plugin?("vagrant-vbguest")

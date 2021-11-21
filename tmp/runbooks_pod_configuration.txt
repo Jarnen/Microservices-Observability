@@ -1,0 +1,296 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2021-11-14T09:22:48Z"
+  deletionGracePeriodSeconds: 30
+  deletionTimestamp: "2021-11-14T09:27:59Z"
+  generateName: backend-app-6644f85cf-
+  labels:
+    app: backend-app
+    pod-template-hash: 6644f85cf
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:generateName: {}
+        f:labels:
+          .: {}
+          f:app: {}
+          f:pod-template-hash: {}
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"d904d890-425c-44b4-8d5f-27818780a0e5"}:
+            .: {}
+            f:apiVersion: {}
+            f:blockOwnerDeletion: {}
+            f:controller: {}
+            f:kind: {}
+            f:name: {}
+            f:uid: {}
+      f:spec:
+        f:containers:
+          k:{"name":"backend-app"}:
+            .: {}
+            f:env:
+              .: {}
+              k:{"name":"JAEGER_PROPAGATION"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"JAEGER_SERVICE_NAME"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:ports:
+              .: {}
+              k:{"containerPort":8081,"protocol":"TCP"}:
+                .: {}
+                f:containerPort: {}
+                f:protocol: {}
+            f:resources: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+          k:{"name":"jaeger-agent"}:
+            .: {}
+            f:args: {}
+            f:env:
+              .: {}
+              k:{"name":"HOST_IP"}:
+                .: {}
+                f:name: {}
+                f:valueFrom:
+                  .: {}
+                  f:fieldRef:
+                    .: {}
+                    f:apiVersion: {}
+                    f:fieldPath: {}
+              k:{"name":"POD_NAME"}:
+                .: {}
+                f:name: {}
+                f:valueFrom:
+                  .: {}
+                  f:fieldRef:
+                    .: {}
+                    f:apiVersion: {}
+                    f:fieldPath: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:ports:
+              .: {}
+              k:{"containerPort":5775,"protocol":"UDP"}:
+                .: {}
+                f:containerPort: {}
+                f:name: {}
+                f:protocol: {}
+              k:{"containerPort":5778,"protocol":"TCP"}:
+                .: {}
+                f:containerPort: {}
+                f:name: {}
+                f:protocol: {}
+              k:{"containerPort":6831,"protocol":"UDP"}:
+                .: {}
+                f:containerPort: {}
+                f:name: {}
+                f:protocol: {}
+              k:{"containerPort":6832,"protocol":"UDP"}:
+                .: {}
+                f:containerPort: {}
+                f:name: {}
+                f:protocol: {}
+              k:{"containerPort":14271,"protocol":"TCP"}:
+                .: {}
+                f:containerPort: {}
+                f:name: {}
+                f:protocol: {}
+            f:resources: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+        f:dnsPolicy: {}
+        f:enableServiceLinks: {}
+        f:restartPolicy: {}
+        f:schedulerName: {}
+        f:securityContext: {}
+        f:terminationGracePeriodSeconds: {}
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.42.0.16"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: k3s
+    operation: Update
+    time: "2021-11-14T09:23:15Z"
+  name: backend-app-6644f85cf-5jqfm
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: backend-app-6644f85cf
+    uid: d904d890-425c-44b4-8d5f-27818780a0e5
+  resourceVersion: "1987"
+  selfLink: /api/v1/namespaces/default/pods/backend-app-6644f85cf-5jqfm
+  uid: 2b758a5a-cbca-4619-b1c1-fb78e46ffcec
+spec:
+  containers:
+  - env:
+    - name: JAEGER_SERVICE_NAME
+      value: backend-app.default
+    - name: JAEGER_PROPAGATION
+      value: jaeger,b3,w3c
+    image: jarich/backend-app:v1.5
+    imagePullPolicy: Always
+    name: backend-app
+    ports:
+    - containerPort: 8081
+      protocol: TCP
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-98qxz
+      readOnly: true
+  - args:
+    - --agent.tags=cluster=undefined,container.name=backend-app,deployment.name=backend-app,host.ip=${HOST_IP:},pod.name=${POD_NAME:},pod.namespace=default
+    - --reporter.grpc.host-port=dns:///simplest-collector-headless.default.svc:14250
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: HOST_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.hostIP
+    image: jaegertracing/jaeger-agent:1.24.0
+    imagePullPolicy: IfNotPresent
+    name: jaeger-agent
+    ports:
+    - containerPort: 5775
+      name: zk-compact-trft
+      protocol: UDP
+    - containerPort: 5778
+      name: config-rest
+      protocol: TCP
+    - containerPort: 6831
+      name: jg-compact-trft
+      protocol: UDP
+    - containerPort: 6832
+      name: jg-binary-trft
+      protocol: UDP
+    - containerPort: 14271
+      name: admin-http
+      protocol: TCP
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-98qxz
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: localhost
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-98qxz
+    secret:
+      defaultMode: 420
+      secretName: default-token-98qxz
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2021-11-14T09:22:49Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2021-11-14T09:23:15Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2021-11-14T09:23:15Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2021-11-14T09:22:49Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: containerd://0a9c08986ae43bb24a698f9c118c7dbf5f70207ad6b7dd8678f8bc98855a4740
+    image: docker.io/jarich/backend-app:v1.5
+    imageID: docker.io/jarich/backend-app@sha256:b160b6f3295914eccdbfa5241e59ee5fa96e7597910cbf705d251a8742fd2d54
+    lastState: {}
+    name: backend-app
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2021-11-14T09:22:55Z"
+  - containerID: containerd://16d298684359624f0f64d8ea4d01e78cd1c50be24b7c2624ab57a6cd061f5b33
+    image: docker.io/jaegertracing/jaeger-agent:1.24.0
+    imageID: docker.io/jaegertracing/jaeger-agent@sha256:05d496f671d19d41104c6a9ac62764d07aa4788bc6887e90d6363780849a08ef
+    lastState: {}
+    name: jaeger-agent
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2021-11-14T09:23:14Z"
+  hostIP: 10.0.2.15
+  phase: Running
+  podIP: 10.42.0.16
+  podIPs:
+  - ip: 10.42.0.16
+  qosClass: BestEffort
+  startTime: "2021-11-14T09:22:49Z"
