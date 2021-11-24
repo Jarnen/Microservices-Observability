@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :q
-|2,0,1637511108,,"q"
+|2,0,1637582967,,"q"
 :wq
 |2,0,1637418571,,"wq"
 :w
@@ -32,28 +32,32 @@
 |3,1,36,0,1,0,0,"h"
 
 # File marks:
-'0  4  0  /home/manifests/added/jaeger_instance.yaml
-|4,48,4,0,1637511108,"/home/manifests/added/jaeger_instance.yaml"
-'1  19  37  /home/manifests/app/backend.yaml
-|4,49,19,37,1637418571,"/home/manifests/app/backend.yaml"
-'2  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
-|4,50,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
-'3  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
-|4,51,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
-'4  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
-|4,52,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
-'5  1  0  /home/manifests/added/rolkubectl
-|4,53,1,0,1637342446,"/home/manifests/added/rolkubectl"
-'6  4  0  /home/manifests/added/jaeger_instance.yaml
-|4,54,4,0,0,"/home/manifests/added/jaeger_instance.yaml"
-'7  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
-|4,55,1,0,0,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
-'8  20  18  /etc/resolv.conf
-|4,56,20,18,0,"/etc/resolv.conf"
-'9  19  37  /home/manifests/app/backend.yaml
-|4,57,19,37,0,"/home/manifests/app/backend.yaml"
+'0  19  37  /home/manifests/app/backend.yaml
+|4,48,19,37,1637582967,"/home/manifests/app/backend.yaml"
+'1  4  0  /home/manifests/added/jaeger_instance.yaml
+|4,49,4,0,1637511108,"/home/manifests/added/jaeger_instance.yaml"
+'2  19  37  /home/manifests/app/backend.yaml
+|4,50,19,37,1637418571,"/home/manifests/app/backend.yaml"
+'3  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
+|4,51,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
+'4  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,52,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+'5  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,53,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+'6  1  0  /home/manifests/added/rolkubectl
+|4,54,1,0,1637342446,"/home/manifests/added/rolkubectl"
+'7  4  0  /home/manifests/added/jaeger_instance.yaml
+|4,55,4,0,0,"/home/manifests/added/jaeger_instance.yaml"
+'8  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,56,1,0,0,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+'9  20  18  /etc/resolv.conf
+|4,57,20,18,0,"/etc/resolv.conf"
 
 # Jumplist (newest first):
+-'  19  37  /home/manifests/app/backend.yaml
+|4,39,19,37,1637582967,"/home/manifests/app/backend.yaml"
+-'  4  0  /home/manifests/added/jaeger_instance.yaml
+|4,39,4,0,1637511108,"/home/manifests/added/jaeger_instance.yaml"
 -'  4  0  /home/manifests/added/jaeger_instance.yaml
 |4,39,4,0,1637511108,"/home/manifests/added/jaeger_instance.yaml"
 -'  19  37  /home/manifests/app/backend.yaml
@@ -68,6 +72,30 @@
 |4,39,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
 -'  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
 |4,39,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
+|4,39,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
+|4,39,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
+|4,39,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongdb-operator.yaml
+|4,39,1,0,1637404683,"/home/reference-app/manifests/mongo/mongdb-operator.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
+-'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
+|4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
 -'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
 |4,39,1,0,1637402338,"/home/reference-app/manifests/mongo/mongodb.yaml"
 -'  1  0  /home/reference-app/manifests/mongo/mongodb.yaml
@@ -116,6 +144,38 @@
 |4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
 -'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
 |4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
+-'  1  0  /home/manifests/service_monitors/backend_svc_monitor.yaml
+|4,39,1,0,1637372513,"/home/manifests/service_monitors/backend_svc_monitor.yaml"
 -'  1  0  /home/manifests/added/rolkubectl
 |4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
 -'  1  0  /home/manifests/added/rolkubectl
@@ -180,89 +240,25 @@
 |4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
 -'  1  0  /home/manifests/added/rolkubectl
 |4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
--'  20  18  /etc/resolv.conf
-|4,39,20,18,0,"/etc/resolv.conf"
--'  1  0  /etc/resolv.conf
-|4,39,1,0,0,"/etc/resolv.conf"
--'  1  0  /home/manifests/added/jaeger_instance.yaml
-|4,39,1,0,0,"/home/manifests/added/jaeger_instance.yaml"
--'  1  0  /home/manifests/added/jaeger_instance
-|4,39,1,0,0,"/home/manifests/added/jaeger_instance"
--'  1  0  /home/manifests/added/jaeger_instance
-|4,39,1,0,0,"/home/manifests/added/jaeger_instance"
--'  1  0  /home/manifests/added/jaeger_instance
-|4,39,1,0,0,"/home/manifests/added/jaeger_instance"
--'  1  0  /home/manifests/added/jaeger_instance
-|4,39,1,0,0,"/home/manifests/added/jaeger_instance"
--'  17  16  /home/manifests/app/backend.yaml
-|4,39,17,16,0,"/home/manifests/app/backend.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
--'  4  24  /home/manifests/added/jaeger_instance-defaultns.yaml
-|4,39,4,24,0,"/home/manifests/added/jaeger_instance-defaultns.yaml"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
+-'  1  0  /home/manifests/added/rolkubectl
+|4,39,1,0,1637342446,"/home/manifests/added/rolkubectl"
 
 # History of marks within files (newest to oldest):
 
-> /home/manifests/added/jaeger_instance.yaml
-	*	1637511107	0
-	"	4	0
-
 > /home/manifests/app/backend.yaml
-	*	1637418567	0
+	*	1637582965	0
 	"	19	37
 	^	19	38
 	.	19	37
@@ -270,6 +266,10 @@
 	+	20	28
 	+	17	37
 	+	19	37
+
+> /home/manifests/added/jaeger_instance.yaml
+	*	1637511107	0
+	"	4	0
 
 > /home/reference-app/manifests/mongo/mongdb-operator.yaml
 	*	1637404681	0

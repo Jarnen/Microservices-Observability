@@ -1,12 +1,3 @@
-exit
-kubectl get pods
-kubectl get pods -a
-kubectl get pods -A
-clear
-kubectl get pods -A
-clear
-cd ..
-kubectl create -f https://raw.githubusercontent.com/jaegertracing/jaeger-operator/master/deploy/crds/jaegertracing.io_jaegers_crd.yaml
 kubectl create -f https://raw.githubusercontent.com/jaegertracing/jaeger-operator/master/deploy/service_account.yaml
 kubectl create -f https://raw.githubusercontent.com/jaegertracing/jaeger-operator/master/deploy/role.yaml
 kubectl create -f https://raw.githubusercontent.com/jaegertracing/jaeger-operator/master/deploy/role_binding.yaml
@@ -997,4 +988,13 @@ clear
 exit
 kubectl get pods -A
 clear
+exit
+kubectl run -i --tty alpine --image=alpine --restart=Never 
+
+kubectl get pods 
+exit
+kubectl port-forward svc/backend-app --address 0.0.0.0 5000:5000
+exit
+kubectl port-forward -n monitoring svc/prometheus-kube-prometheus-prometheus --address 0.0.0.0 9090:9090
+vagrant halt
 exit
