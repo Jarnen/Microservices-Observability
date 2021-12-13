@@ -1,22 +1,24 @@
-## Installation Steps
+## Project Description
+In this project, we created dashboards that use multiple graphs to monitor our sample application that is deployed on a Kubernetes cluster. We used Prometheus, Jaeger, and Grafana in order to monitor, trace and visualize our experience experience.
 
+## Project Objectives
+Following sub-sections shows the project objectives and todos that implemented the objectives. Refer [here](https://github.com/udacity/CNAND_nd064_C4_Observability_Starter_Files) for the link to the starter files. 
 
-**Note:** For the screenshots, you can store all of your answer images in the `answer-img` directory.
-## Verify the monitoring installation
+### Verify the monitoring installation
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
-### All Pods
+#### All Pods
 ![alt text](./answer-img/all_pods.png "All Pods")
-### All Services
+#### All Services
 ![alt text](./answer-img/all_services.png "All services")
 
-## Setup the Jaeger and Prometheus source
+### Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 ![alt text](./answer-img/grafan-homepage.png "Grafana Homepage")
 
-## Create a Basic Dashboard
+### Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 ![alt text](./answer-img/grafana-dashboard-prometheus-source.png "Grafana Dashbaord")
-## Describe SLO/SLI
+### Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*. 
 
 Service Level Indicators (SLIs) are metrics used to measure the performance of services. That is, when we have determined the services that will be provided by our
@@ -25,7 +27,7 @@ the SLI will be the 99%. Which means, the service should be up 99% of the time w
 The SLI for request response time can be measured in seconds and not hours for a request and the response time. Thus, we can measure these metrics and determine if our application
 needs upgrades or improvements.
 
-## Creating SLI metrics.
+### Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
 Customers are very important, they are the reason an application is developed. Hence, customer satisfactions needs to be considered. 
 
@@ -38,19 +40,19 @@ for there satisfaction;
 5. Service Uptime - the metrics for this would be 99% uptime monthly measured in time over every 30 days.
 6. Total requests per seconds - metrics can be measured in requests/sec (rps) to measure traffic
 
-## Create a Dashboard to measure our SLIs
+### Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want 
 to measure  40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
 ![alt text](./answer-img/apps_uptime_downtime.png "Apps Uptime & Downtime Dashboards")
 
-## Tracing our Flask App
+### Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here.
 ![alt text](./answer-img/jaeger-backend-span.png "Backend-app Span")
 
-## Jaeger in Dashboards
+### Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 ![alt text](./answer-img/grafana-local-deployments-dashboard.png "Grafana Local Deployments Dashboard")
-## Report Error
+### Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that 
 is causing the issue.
 
@@ -69,12 +71,12 @@ Severity: High
 Description: Cannot access the endpoint star from the backend application by accessing http://localhost:5000 to access the database stars and post. Refer below is the screenshot of the trace.
 ![alt text](./answer-img/history_trace_trouble_ticket.png "Star endpoint trace")
 
-## Creating SLIs and SLOs
+### Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name three SLIs that you would use to measure the success of this SLO.
 1. Application Uptime in hours per day should be more than 99.9%
 2. Average Response Time for successful requests should be less than 30 seconds every month
 3. Total failed responses should be less than 0.09% per month. 
-## Building KPIs for our plan
+### Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create KPIs to accurately measure these metrics. We will make a dashboard for this, but first write them down here.
 1. Application Uptime
 - CPU usage will be measured in bits/seconds for frontend and backend service respectively. We want to make sure that the CPU can process all requests. This can help us to scale up or down.
@@ -85,6 +87,6 @@ Description: Cannot access the endpoint star from the backend application by acc
 5. Failed response per second - Errors per second
 - We want to know where the services went wrong. Hence, we will measure the errors counts per second.
 - We will also gather total requests in requests per seconds to compare with failed requests.
-## Final Dashboard
+### Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
 ![alt text](./answer-img/kpi_dashboard_description.png "KPI Dashbaord")
